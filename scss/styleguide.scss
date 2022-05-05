@@ -1,0 +1,89 @@
+// mai intii facem import la toate din base
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "base/colors";
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+@import "base/mixins";
+
+
+// apoi la toate din layout
+@import "layout/grid";
+@import "layout/section";
+
+
+$header-height: 95px;
+$sidebar-width: 231px;
+
+.HEADER {
+  height: $header-height;
+  background-color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: $header-height;
+  height: calc(100vh - #{$header-height});
+  width: $sidebar-width;
+  background-color: white ;
+  overflow-y: scroll;
+
+}
+
+.main {
+  position: fixed;
+  top: $header-height;
+  left: $sidebar-width;
+  height: calc(100vh - #{$header-height});
+  width: calc(100vw - #{$sidebar-width});
+  background-image: linear-gradient(blue, yellow);
+}
+
+.main-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+
+.btn-1 {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 17px 17px;
+  padding-left: 24px;
+  text-align: left;
+  transition: 0.4s;
+  background-size: auto;
+  color: black;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #EEEEEE;
+}
+
+.btn-1:hover {
+  background-color: pink;
+}
+
+.btn-1:active {
+  background-color: blue;
+  transform: translateY(4px);
+}
+
+.HEADER_IMG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 60px;
+}
+
+
+.HEADER_IMG li + li {
+  margin-left: 24px;
+}

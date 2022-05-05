@@ -1,0 +1,121 @@
+.animation-area {
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 50%;
+  }
+
+  &:hover {
+    .animation-child {
+      animation-play-state: paused;
+      animation-name: css-basic;
+    }
+  }
+}
+
+@keyframes css-basic {
+  0% {
+    background-color: orange;
+    left: 0;
+    top: 0%
+  }
+
+  10% {
+    background-color: green;
+    left: calc(100% - 50px);
+    top: 0;
+  }
+
+  15% {
+    background-color: red;
+    left: calc(100% - 50px);
+    top: calc(20% - 50px);
+  }
+
+  25% {
+    background-color: green;
+    left: 0;
+    top: calc(20% - 50px);
+  }
+
+  35% {
+    background-color: skyblue;
+    left: 0;
+    top: calc(40% - 50px);
+  }
+
+  45% {
+    background-color: green;
+    left: calc(100% - 50px);
+    top: calc(40% - 50px);
+  }
+
+  55% {
+    background-color: burlywood;
+    left: calc(100% - 50px);
+    top: calc(60% - 50px);
+  }
+
+  65% {
+    background-color: orange;
+    left: 0;
+    top: calc(60% - 50px);
+  }
+
+  75% {
+    background-color: red;
+    left: 0;
+    top: calc(80% - 50px);
+  }
+
+  85% {
+    background-color: green;
+    left: calc(100% - 50px);
+    top: calc(80% - 50px);
+  }
+
+  90% {
+    left: calc(100% - 50px);
+    background-color: blue;
+    top: calc(100% - 50px);
+  }
+  100% {
+    left: 0;
+    background-color: red;
+    top: calc(100% - 50px);
+  }
+}
+
+/*
+animation-name: <nume> aplica animația creată acestui selector
+animation-duration: 1s - determină durata în timp a acestei animații selectate
+animation-iteration-count: 1 || 2 || 3 || infinite - determină de câte ori animația este pornită+oprită
+animation-timing-funciton: linear || ease || ease-out || ease-in || ease-in-out || cubic-bezier() - metoda prin care animația isi stabileste "viteza"
+animation-delay: <timpul> in valori "s" sau "ms" - cu cat timp amânăm animația
+animation-play-state: running || paused - determina daca la moment este animatia pornita sau oprita
+animation-direction: normal (d) || reverse || alternate || alternate-reverse - determină direcția în/din care animația se rulează (de la "from" la "to" sau de la "to" la "from")
+animation-fill-mode: none(d) || forwards || backwards || both - determină aplicarea stilurilor dinnăutrul animație în afara sa
+- none: stilurile din interiorul keyframes se aplica doar in timpul animatiei, sunt sterse de altfel
+- forwards: stilurile din ultimul cadru se mențin chiar și după sfârșitul animației
+- backwards: stilurile din primul cadru se mențin chiar și înaintea animației, însă numai dacă este delay
+- both: stilurile din primul și ultimul cadru se mențin tot timpul (cele din primul cadru doar începând cu delay)
+*/
+.animation-child {
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  // top: 0;
+  // left: 0;
+  // animation-duration: 2s;
+  // animation-iteration-count: 1;
+  // animation-timing-function: linear;
+  // animation-direction: alternate;
+  // animation-fill-mode: both;
+  // animation-delay: 2s;
+  animation: css-basic 10s  linear 2 alternate-reverse;
+}

@@ -1,0 +1,139 @@
+.filter-box {
+  width: 100%;
+}
+
+.filter-box--blur:hover {
+  filter: blur(2px);
+}
+
+.filter-box--brightness:hover {
+  filter: brightness(0.1);
+}
+
+.filter-box--contrast:hover {
+  filter: contrast(200%);
+}
+
+.filter-box--drop-shadow:hover {
+  filter: drop-shadow(50px 50px 0 red);
+}
+
+.filter-box--grayscale:hover {
+  filter: grayscale(100%);
+}
+
+.filter-box--hue-rotate:hover {
+  filter: hue-rotate(90deg);
+}
+
+.filter-box--invert:hover {
+  filter: invert(100%);
+}
+
+.filter-box--opacity:hover {
+  filter: opacity(30%);
+}
+
+.filter-box--saturate:hover {
+  filter: saturate(30%);
+}
+
+.filter-box--sepia:hover {
+  filter: sepia(100%);
+}
+
+
+
+
+
+
+.filter-box {
+  width: 100%;
+}
+
+.filter-box--blur:hover {
+  filter: blur(2px);
+}
+
+.filter-box--brightness:hover {
+  filter: brightness(0.1);
+}
+
+.filter-box--contrast:hover {
+  filter: contrast(200%);
+}
+
+.filter-box--drop-shadow:hover {
+  filter: drop-shadow(50px 50px 0 red);
+}
+
+.filter-box--grayscale:hover {
+  filter: grayscale(100%);
+}
+
+.filter-box--hue-rotate:hover {
+  filter: hue-rotate(90deg);
+}
+
+.filter-box--invert:hover {
+  filter: invert(100%);
+}
+
+.filter-box--opacity:hover {
+  filter: opacity(30%);
+}
+
+.filter-box--saturate:hover {
+  filter: saturate(30%);
+}
+
+.filter-box--sepia:hover {
+  filter: sepia(100%);
+}
+
+
+
+
+.filter-box--multipl-1:hover {
+  filter: blur(5px) sepia(50%);
+}
+
+.filter-box--multipl-2:hover {
+  filter: contrast(50%) saturate(50%);
+}
+
+.filter-box--multipl-3:hover {
+  filter: blur(1px) opacity(70%);
+}
+
+.filter-box--multipl-4:hover {
+  filter: saturate(75%) invert(50%);
+}
+
+.filter-box--multipl-5:hover {
+  filter: blur(5px) hue-rotate(45deg);
+}
+
+.filter-box--multipl-6:hover {
+  filter: contrast(50%) sepia(50%);
+}
+
+.filter-box--multipl-7:hover {
+  filter: grayscale(45%) opacity(76%);
+}
+
+.filter-box--multipl-8:hover {
+  filter: blur(1px) invert(120%);
+}
+
+.filter-box--multipl-9:hover {
+  filter: grayscale(100%) sepia(50%);
+}
+
+.filter-box--url {
+  filter: url("../../images/5.svg");
+}
+
+
+
+

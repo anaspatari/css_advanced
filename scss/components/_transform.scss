@@ -1,0 +1,328 @@
+.transform-action-area--1 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+.transform-action-area--2 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.transform-action-area--3 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scaleX(2);
+    }
+  }
+}
+
+.transform-action-area--4 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scaleY(0.5);
+    }
+  }
+}
+
+.transform-action-area--5 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: skew(45deg);
+    }
+  }
+}
+
+.transform-action-area--6 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: skewX(80deg);
+    }
+  }
+}
+
+.transform-action-area--7 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: skewY(45deg);
+    }
+  }
+}
+
+.transform-action-area--8 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: translate(30px, 20px) rotate(20deg);
+    }
+  }
+}
+
+.transform-action-area--9 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: translate(120px, 50%);
+    }
+  }
+}
+
+.transform-action-area--10 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: rotate3d(1, 2.0, 3.0, 10deg);
+    }
+  }
+}
+
+.transform-action-area--11 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform:  matrix(1, 2, 3, 4, 5, 6);
+    }
+  }
+}
+
+.transform-action-area--12 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.transform-action-area--13 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: unset;
+    }
+  }
+}
+
+.transform-action-area--14 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: rotateY(45deg);
+    }
+  }
+}
+
+.transform-action-area--15 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: translate(120px, 50%)
+    }
+  }
+}
+
+
+
+
+
+.transform-action-area--16 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scaleX(2);
+    }
+  }
+}
+
+.transform-action-area--17 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scale3d(2.5, 1.2, 0.3);
+    }
+  }
+}
+
+.transform-action-area--18 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: scale(2, 0.5);
+    }
+  }
+}
+
+.transform-action-area--19 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: skewY(1.07rad);
+    }
+  }
+}
+
+.transform-action-area--20 {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+    }
+  }
+}
+
+
+/*
+
+scale(1.2) - permite marirea/micsorarea (scalarea) unui element pe baza unui coeficient
+scaleX(2) - scaleaza pe horizontal axis
+scaleY(0.5) - scaleaza pe vertical axis
+
+skew(45deg) - inclina (tilt) un element
+skewX(45deg) - inclina laturile verticale
+skewY(45deg) - inclina laturile orizontale
+
+
+translate(100px, 100px, 50px) - muta elementul din locul sau initial
+translateX() - muta pe orizontala
+translateY() - muta pe verticala
+translateZ(100px) - muta pe axa o-Z
+
+
+rotate(45deg) - roteste elementul pe o axa numita
+rotateX() - roteste pe axa o-X
+rotateY() - roteste pe axa o-Y
+rotateZ() - roteste pe axa o-Z 
+
+transform-style: flat || preserve-3d - defineste una din 2 stiluri: fie fara 3d grafica fie cu
+
+transform-origin: defineste punctul de pornire a unei transformari. Poate fi "left bottom" sau procentual "0% 100%".
+
+backface-visibility: visible || hidden - defineste daca partea din spate este vizibila utilizatorului din fata
+
+perspective: distanta intre z=0 si ecranul vizualizatorului
+
+perspective-origin: punctul din care perspective isi va porni numaratoarea
+*/
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+
+
+.cub:hover {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+
+  @keyframes rotate {
+    100% {
+      transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+}
+
+.cub:before,
+.cub:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10em;
+  height: 10em;
+
+}
+
+.cub:before {
+  transform: rotateX(90deg);
+}
+
+.cub:after {
+  transform: rotatey(90deg);
+}
+
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border: 2px solid white;
+  opacity: .7;
+}
+
+.text_cub {
+  color: red;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
+  text-align: center;
+  
+  margin-top: 30%;
+}
+
+.cub-back {
+  transform: translateZ(-5em);
+  background: orange;
+}
+
+.cub-left {
+  transform: translateX(-5em) rotateY(90deg);
+  background: lightgreen;
+}
+
+.cub-right {
+  transform: translateX(5em) rotateY(90deg);
+  background: yellowgreen;
+}
+
+.cub-top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: skyblue;
+}
+
+.cub-bottom {
+  transform: translateY(5em) rotateX(90deg);
+  background: steelblue;
+}
+
+.cub-front {
+  transform: translateZ(5em);
+  background: gold;
+}

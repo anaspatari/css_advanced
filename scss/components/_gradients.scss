@@ -1,0 +1,93 @@
+.gradient-box {
+  width: 100%;
+}
+
+.gradient-box--1 {
+  background: rgb(124,15,110);
+  background: linear-gradient(312deg, rgba(124,15,110,1) 0%, rgba(175,128,58,0.32396708683473385) 41%, rgba(212,211,20,1) 51%, rgba(232,255,0,1) 100%);
+}
+
+
+
+
+.gradient-box--2 {
+  background:linear-gradient(90deg, yellow, green);
+}
+
+.gradient-box--3 {
+  background:linear-gradient(120deg, orange, black);
+}
+
+.gradient-box--4 {
+  background:linear-gradient(145deg, green, pink);
+}
+
+.gradient-box--5 {
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;
+}
+
+.gradient-box--6 {
+  background:linear-gradient(to bottom, rgb(0, 255, 140) 20%, rgb(75, 41, 123) 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
+}
+
+.gradient-box--7 {
+  background:radial-gradient(rgb(0, 255, 119), rgb(67, 83, 124), rgb(30, 144, 255));
+}
+
+.gradient-box--8 {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, 
+  rgba(253,29,29,1) 50%, 
+  rgba(252,176,69,1) 100%);
+}
+
+.gradient-box--9 {
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+}
+
+.gradient-box--10 {
+  background:repeating-radial-gradient(powderblue, powderblue 8px, white 8px, white 16px);
+}
+
+.gradient-box--11 {
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 50%;
+}
+
+.gradient-box--12 {
+  background-image: conic-gradient(at 60% 45%, red, yellow, green);
+}
+
+.gradient-box--13 {
+  background:linear-gradient(red 0%, orange 10% 30%, yellow 50% 70%, green 90% 100%);
+}
+
+.gradient-box--14 {
+  background:linear-gradient(red 10%, 30%, blue 90%);
+}
+
+.gradient-box--15 {
+  background:linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+}
+
+.gradient-box--16 {
+  background:linear-gradient(.25turn, blue 30%, red);
+}
+
+.gradient-box--17 {
+  background:linear-gradient(45deg, grey, black);
+}
+
+.gradient-box--18 {
+  background:linear-gradient(0deg, purple, yellow 40%);
+}
+
+.gradient-box--19 {
+  background:linear-gradient(to left top, pink, grey);
+}
+
+.gradient-box--20 {
+  background:linear-gradient(145deg, green, red);
+}

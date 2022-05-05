@@ -1,0 +1,100 @@
+.transition-area {
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 50%;
+  }
+
+  &:hover {
+    .transition-child {
+      left: calc(100% - 50px);
+
+    }
+  }
+}
+
+
+
+.transition-child {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  transition: left 2s,  2s;
+}
+
+.transition-child--1 {
+  background: blue;
+  top: 0;
+  transition-timing-function: steps(2, jump-end);
+}
+
+.transition-child--2 {
+  background: green;
+  top: 10%;
+  transition-timing-function: steps(3, jump-start);
+}
+
+.transition-child--3 {
+  background: yellow;
+  top: 20%;
+  transition-timing-function: linear(0, 0, 0.5, 1);
+}
+
+.transition-child--4 {
+  background: orangered;
+  top: 30%;
+  transition-timing-function: cubic-bezier(0, 1.25, 0.1, 1);
+}
+
+.transition-child--5 {
+  background: gray;
+  top: 40%;
+  transition-timing-function: ease-out;
+}
+
+.transition-child--6 {
+  background: hotpink;
+  top: 50%;
+  transition-timing-function: cubic-bezier(0, 1.25, 0.1, -1);
+}
+
+.transition-child--7 {
+  background: lawngreen;
+  top: 60%;
+  transition-timing-function: ease-in-out;
+}
+
+.transition-child--8 {
+  background: darkmagenta;
+  top: 70%;
+  transition-timing-function: cubic-bezier(0.29, 1.25, 1, -0,68);
+}
+
+.transition-child--9 {
+  background: red;
+  top: 80%;
+  transition-timing-function: steps(6);
+}
+
+.transition-child--10 {
+  background: olive;
+  top: 90%;
+  transition-timing-function: ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+

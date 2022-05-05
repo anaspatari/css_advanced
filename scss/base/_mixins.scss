@@ -1,0 +1,61 @@
+@mixin display-inline-block-fix($font-size: 16px) {
+  font-size: 0;
+
+  > * {
+    display: inline-block;
+    font-size: $font-size;
+  }
+}
+
+
+.sasha-link {
+  color: red;
+
+  &:hover {
+    color: green; 
+  }
+
+  body.theme-dark & {
+    color: green;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+
+
+
+
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+  "medium": 500,
+  "black": 900,
+  "thin": 100,
+);
+
+$brand-colors: (
+  'primary': '#498123',
+  'secondary': '#457fba',
+  'dark': "3f4f8a",
+);
+
+
+@each $name, $weight in $font-weights {
+  .font-weight--#{$name} {
+    font-weight: $weight;
+  }
+}
+
+@each $color, $value in $brand-colors {
+  .color--#{$color} {
+    color: $value;
+  }
+
+  .background-color--#{$color} {
+    background-color: $value;
+  }
+}
+
